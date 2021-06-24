@@ -11,7 +11,7 @@ if nargin<1,
 end;
 
 fid = fopen(configfile);
-if fid<0, error('cannot open file %s\n',a); end;
+if fid<0, error('cannot open file %s\n',configfile); end;
 
 while ~feof(fid)
     line = strtrim(fgetl(fid));
